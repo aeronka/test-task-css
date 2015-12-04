@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica,arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* стили, определяющие двухколонный макет */
+.personal-account {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+    .personal-account__common-info {
+        width: 200px;
+        position: absolute;
+        padding-right: 40px;
+    }
+
+    .account-content {
+        position: absolute;
+        width: 784px;
+        left: 240px;
+        top: 40px;
+    }
+
+/* стили блока верхнего меню */
+.account-header {
+    list-style: none;
+    /*border: 1px solid rgb(207, 207, 207);*/
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    height: 67px;
+    width: 675px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    .account-header__item {
+        display: inline-block;
+        padding: 0 10px;
+        line-height: 67px;
+        font-weight: 300;
+    }
+
+        .account-header__link_color-violet {
+            color: rgb(107, 0, 180);
+        }
+
+        .account-header__link_color-green {
+            color: rgb(20, 115, 27);
+        }
+
+        .account-header__link_color-blue {
+            color: rgb(14, 115, 217);
+        }
+
+        .account-header__link_color-orange {
+            color: rgb(227, 76, 0);
+        }
+
+        .account-header__link_color-grey {
+            color: rgb(51, 51, 51);
+        }
+
+        .account-header__link_color-red {
+            color: rgb(182, 7, 0);
+        }
+
+/* стили таблицы с формой */
+.account-form {
+    width: 680px;
+    margin: 50px auto 0;
+}
+
+/* шкала шагов */
+    .content-steps {
+        display: inline-block;
+    }
+
+        .content-steps__name {
+            font-weight: lighter;
+            font-size: 24px;
+            display: inline-block;
+        }
+
+        .scale-steps {
+            display: inline-block;
+            list-style: none;
+            font-size: 10px;
+            font-style: italic;
+            font-weight: lighter;
+            vertical-align: text-top;
+            margin-left: 20px;
+        }
+
+            .scale-steps__item {
+                display: inline-block;
+                width: 90px;
+                height: 14px;
+                text-align: center;
+                margin-right: 1px;
+            }
+
+            .scale-steps__item:first-child {
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+
+            .scale-steps__item:last-child {
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+                margin-right: 0;
+            }
+
+            .scale-steps__item_dark-green {
+                color: rgb(255, 255, 255);
+                background: rgb(59, 173, 25);
+                box-shadow: inset 0px 2px 3px rgba(33, 96, 14, 0.5);
+            }
+
+            .scale-steps__item_light-green {
+                color: rgb(255, 255, 255);
+                background: rgb(159, 210, 6);
+                box-shadow: inset 0px 2px 3px rgba(89, 118, 2, 0.5);
+            }
+
+            .scale-steps__item_light-grey {
+                color: rgb(123, 123, 123);
+                background: rgb(246, 246, 246);
+                box-shadow: inset 0px 2px 3px rgba(153, 153, 153, 0.5);
+            }
+
+/* разделитель */
+    .form-separator {
+        display: inline-block;
+        padding: 20px 0;
+    }
+
+        .form-separator__label {
+            font-style: italic;
+            color: rgb(102, 102, 102);
+            font-weight: lighter;
+            font-size: 13px;
+        }
+
+        .form-separator__separator {
+            display: inline-block;
+            width: 540px;
+            background: rgb(202, 202, 202);
+            height: 1px;
+            margin-left: 7px;
+            vertical-align: middle;
+        }
+
+    /* поле для вообда текста */
+
+    .input-field {
+        
+    }
+
+        .input-field__label {
+            font-size: 13px;
+        }
+
+        .input-field__control {
+            margin-top: 5px;
+            padding: 2px 4px;
+            width: 180px;
+        }
+
+    /* тумблер */
+
+    .tumbler__label {
+        cursor: pointer;
+    }
+
+        .tumbler__item {
+            display: none;
+        }
+
+        .tumbler__text {
+            border-bottom: 1px dotted black;
+            padding: 2px 3px;
+        }
+
+        .tumbler__item:checked + .tumbler__text {
+            background: rgb(159, 210, 6);
+            border-radius: 2px;
+            border-bottom: 0;
+            color: rgb(255, 255, 255);
+        }
