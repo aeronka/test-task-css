@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: Helvetica,arial,sans-serif;
+    line-height: 1.5;
+}
+
+/* стили, определяющие двухколонный макет */
+.personal-account {
+    position: relative;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+    .common-info {
+        position: absolute;
+        top: 160px;
+        padding-right: 40px;
+        width: 200px;
+        font-size: 13px;
+    }
+
+        .common-info__about {
+            margin: 0;
+        }
+
+        .common-info__goal {
+            margin: 25px 0 0;
+        }
+
+    .account-content {
+        position: absolute;
+        top: 40px;
+        left: 240px;
+        width: 784px;
+    }
+
+/* стили блока верхнего меню */
+.account-header {
+    margin: 0 auto;
+    width: 675px;
+    height: 67px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    list-style: none;
+    text-align: center;
+}
+
+    .account-header__item {
+        display: inline-block;
+        padding: 0 10px;
+        font-weight: lighter;
+        line-height: 67px;
+    }
+
+        .account-header__link{
+            text-decoration: none;
+        }
+
+        .account-header__link_color-violet {
+            border-bottom: 1px solid rgb(107, 0, 180);
+            color: rgb(107, 0, 180);
+        }
+
+        .account-header__link_color-green {
+            border-bottom: 1px solid rgb(20, 115, 27);
+            color: rgb(20, 115, 27);
+        }
+
+        .account-header__link_color-blue {
+            border-bottom: 1px solid rgb(14, 115, 217);
+            color: rgb(14, 115, 217);
+        }
+
+        .account-header__link_color-orange {
+            border-bottom: 1px solid rgb(227, 76, 0);
+            color: rgb(227, 76, 0);
+        }
+
+        .account-header__link_color-grey {
+            border-bottom: 1px solid rgb(51, 51, 51);
+            color: rgb(51, 51, 51);
+        }
+
+        .account-header__link_color-red {
+            border-bottom: 1px solid rgb(182, 7, 0);
+            color: rgb(182, 7, 0);
+        }
+
+/* стили таблицы с формой */
+.account-form {
+    margin: 50px auto 0;
+    width: 680px;
+    border-collapse: collapse;
+}
+
+/* шкала шагов */
+
+.content-steps__name {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: lighter;
+    font-size: 23px;
+}
+
+.scale-steps {
+    display: inline-block;
+    margin-left: 25px;
+    list-style: none;
+    vertical-align: text-top;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 10px;
+}
+
+    .scale-steps__item {
+        display: inline-block;
+        margin-right: 1px;
+        width: 90px;
+        height: 14px;
+        text-align: center;
+    }
+
+    .scale-steps__item:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .scale-steps__item:last-child {
+        margin-right: 0;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .scale-steps__item_dark-green {
+        background: rgb(59, 173, 25);
+        box-shadow: inset 0px 3px 4px -2px rgba(33, 96, 14, 1);
+        color: rgb(255, 255, 255);
+    }
+
+    .scale-steps__item_light-green {
+        background: rgb(159, 210, 6);
+        box-shadow: inset 0px 3px 4px -2px rgba(89, 118, 2, 1);
+        color: rgb(255, 255, 255);
+    }
+
+    .scale-steps__item_light-grey {
+        background: rgb(246, 246, 246);
+        box-shadow: inset 0px 3px 4px -2px rgba(145, 145, 145, 1);
+        color: rgb(123, 123, 123);
+    }
+
+/* разделитель */
+    .form-separator {
+        display: inline-block;
+        padding: 25px 0 4px;
+    }
+
+        .form-separator__label {
+            color: rgb(102, 102, 102);
+            font-weight: lighter;
+            font-style: italic;
+            font-size: 13px;
+        }
+
+        .form-separator__separator {
+            display: inline-block;
+            margin-left: 7px;
+            width: 540px;
+            height: 1px;
+            background: rgb(202, 202, 202);
+            vertical-align: middle;
+        }
+
+    /* поле для вообда текста */
+
+    .input-field {
+        padding: 16px 0;
+    }
+
+        .input-field__label {
+            font-size: 12px;
+        }
+
+        .input-field__control {
+            margin-top: 5px;
+            padding: 2px 4px;
+            width: 180px;
+        }
+
+    /* тумблер */
+    .tumbler__title{
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+
+    .tumbler__label {
+        cursor: pointer;
+
+        -ms-user-select: none; 
+        -moz-user-select: none; 
+        -webkit-user-select: none; 
+        user-select: none;
+    }
+
+        .tumbler__item {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .tumbler__text {
+            margin: 0 4px;
+            border-bottom: 1px dotted black;
+            font-weight: lighter;
+            font-size: 13px;
+        }
+
+        .tumbler__item:checked + .tumbler__text {
+            padding: 2px 6px;
+            border-bottom: 0;
+            border-radius: 5px;
+            background: rgb(140, 185, 3);
+            color: rgb(255, 255, 255);
+            font-weight: lighter;
+        }
+
+        .tumbler__item:focus + .tumbler__text {
+            box-shadow: 0 0px 0px 2px rgba(131, 191, 252, 1);
+        }
+
+    /* select */
+
+    .input-field__select {
+        width: 190px;
+        border: 1px solid rgb(223, 223, 223);
+        background: rgb(255, 255, 255);
+
+        -ms-user-select: none; 
+        -moz-user-select: none; 
+        -webkit-user-select: none; 
+        user-select: none;
+    }
+
+    /* select дата рождения */
+
+    .birthday .input-field__select {
+        margin-left: 2px;
+    }
+
+        .input-field__select_birthday-day {
+            width: 57px;
+        }
+
+        .input-field__select_birthday-month {
+            width: 80px;
+        }
+
+        .input-field__select_birthday-year {
+            width: 60px;
+        }
+
+        .birth-place .input-field__control {
+            width: 670px;
+        }
+
+        .birth-place__example {
+            margin: 0;
+            padding: 5px 0 0;
+            color: rgb(102, 102, 102);
+            font-weight: lighter;
+            font-size: 11px;
+        }
+
+    /* footer кнопки */
+    .account-footer {
+        background: rgb(242, 242, 242);
+        vertical-align: middle;
+        line-height: 65px;
+    }
+
+        .account-footer__form_back {
+            text-align: left;
+        }
+
+        .account-footer__form_forward {
+            text-align: right;
+        }
+
+            .account-button {
+                padding: 7px 25px;
+                border: 0px;
+                border-radius: 17px;
+                color: rgb(255, 255, 255);
+                text-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+                letter-spacing: .1em;
+                font-weight: lighter;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .account-button_back {
+                margin-left: 15px;
+                background: rgb(180, 180, 180);
+                background: linear-gradient(to bottom, rgb(192, 192, 192), rgb(126, 126, 126));
+                box-shadow: inset 0 1px 1px rgba(255, 255, 255, .5), inset 0 -1px 1px rgba(0, 0, 0, .2);
+            }
+
+            .account-button_forward {
+                margin-right: 15px;
+                background: rgb(160, 211, 6);
+                background: linear-gradient(to bottom, rgb(166, 219, 8), rgb(134, 179, 3));
+                box-shadow: inset 0 1px 1px rgba(255, 255, 255, .5), inset 0 -1px 1px rgba(90, 140, 3, .5);
+            }
+
+            .account-button:focus {
+                outline: none;
+            }
+
+            .account-button_back:active {
+                background: rgb(126, 126, 126);
+                background: linear-gradient(to top, rgb(192, 192, 192), rgb(126, 126, 126));
+            }
+
+            .account-button_forward:active{
+                background: rgb(134, 179, 3);
+                background: linear-gradient(to top, rgb(166, 219, 8), rgb(134, 179, 3));
+            }

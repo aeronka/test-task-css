@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="personal-account">
+        <div class="common-info">
+            <p class="common-info__about">TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+            <p class="common-info__goal">Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.</p>
+        </div>
+        <div class="account-content">
+            <ul class="account-header">
+                <li class="account-header__item"><a href="#" class="account-header__link account-header__link_color-violet">Личный кабинет</a></li>
+                <li class="account-header__item"><a href="#" class="account-header__link account-header__link_color-green">Раздел 1</a></li>
+                <li class="account-header__item"><a href="#" class="account-header__link account-header__link_color-blue">Раздел 2</a></li>
+                <li class="account-header__item"><a href="#" class="account-header__link account-header__link_color-orange">Раздел 3</a></li>
+                <li class="account-header__item"><a href="#" class="account-header__link account-header__link_color-grey">Раздел 4</a></li>
+                <li class="account-header__item"><a href="#" class="account-header__link account-header__link_color-red">Раздел 5</a></li>
+            </ul>
+            <table class="account-form">
+                <tr>
+                    <td colspan="3">
+                        <div class="content-steps">
+                            <h2 class="content-steps__name">Заполните форму</h2>
+                            <ul class="scale-steps">
+                                <li class="scale-steps__item scale-steps__item_dark-green">1</li><!--
+                                --><li class="scale-steps__item scale-steps__item_dark-green">2</li><!--
+                                --><li class="scale-steps__item scale-steps__item_light-green">3</li><!--
+                                --><li class="scale-steps__item scale-steps__item_light-grey">4</li><!--
+                                --><li class="scale-steps__item scale-steps__item_light-grey">5</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="form-separator">
+                            <span class="form-separator__label">Общая информация</span>
+                            <div class="form-separator__separator"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="input-field">
+                            <h4 class="input-field__label">Фамилия</h4>
+                            <input class="input-field__control" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-field">
+                            <h4 class="input-field__label">Имя</h4>
+                            <input class="input-field__control" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-field">
+                            <h4 class="input-field__label">Отчество</h4>
+                            <input class="input-field__control" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="tumbler last-name">
+                            <h4 class="tumbler__title">Меняли фамилию?</h4>
+                            <label class="tumbler__label"><input class="tumbler__item" type="radio" name="last-name" value="yes"><span class="tumbler__text tumbler__text_left">Да</span></label><label class="tumbler__label"><input class="tumbler__item" type="radio" name="last-name" value="no" checked><span class="tumbler__text tumbler__text_right">Нет</span></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tumbler gender">
+                            <h4 class="tumbler__title">Пол</h4>
+                            <label class="tumbler__label"><input class="tumbler__item" type="radio" name="gender" value="man" checked><span class="tumbler__text tumbler__text_left">Муж</span></label><label class="tumbler__label"><input class="tumbler__item" type="radio" name="gender" value="woman"><span class="tumbler__text tumbler__text_right">Жен</span></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-field family-status">
+                            <h4 class="input-field__label">Семейное положение</h4>
+                            <select class="input-field__select">
+                                <option selected>Женат / Замужем</option>
+                                <option>Не женат</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="input-field">
+                            <h4 class="input-field__label">Гражданство</h4>
+                            <select class="input-field__select">
+                                <option selected>Российская Федерация</option>
+                                <option>Другое</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td colspan="2">
+                        <div class="input-field birthday">
+                            <h4 class="input-field__label">Дата рождения</h4>
+                            <select class="input-field__select input-field__select_birthday-day">
+                                <option>11</option>
+                            </select>
+                            <select class="input-field__select input-field__select_birthday-month">
+                                <option>июня</option>
+                            </select>
+                            <select class="input-field__select input-field__select_birthday-year">
+                                <option>1970</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="input-field birth-place">
+                            <h4 class="input-field__label">Место рождения</h4>
+                            <input class="input-field__control" type="text">
+                            <p class="birth-place__example">Например, Россия, Комсомольск-на-Амуре</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="account-footer">
+                    <td>
+                        <form class="account-footer__form account-footer__form_back"><button class="account-button account-button_back" type="submit" value="back">← Назад</button></form>
+                    </td>
+                    <td></td>
+                    <td>
+                        <form class="account-footer__form account-footer__form_forward"><button class="account-button account-button_forward" type="submit" value="forward">Далее →</button></form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
