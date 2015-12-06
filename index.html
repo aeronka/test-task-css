@@ -7,7 +7,10 @@
 </head>
 <body>
     <div class="personal-account">
-        <div class="personal-account__common-info">Левая колонка с текстом</div>
+        <div class="common-info">
+            <p class="common-info__about">TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+            <p class="common-info__goal">Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.</p>
+        </div>
         <div class="account-content">
             <ul class="account-header">
                 <li class="account-header__item"><a href="#" class="account-header__link account-header__link_color-violet">Личный кабинет</a></li>
@@ -62,17 +65,19 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="tumbler yes-no">
+                        <div class="tumbler last-name">
+                            <h4 class="tumbler__title">Меняли фамилию?</h4>
                             <label class="tumbler__label"><input class="tumbler__item" type="radio" name="yes-no" value="yes"><span class="tumbler__text tumbler__text_left">Да</span></label><label class="tumbler__label"><input class="tumbler__item" type="radio" name="yes-no" value="no" checked><span class="tumbler__text tumbler__text_right">Нет</span></label>
                         </div>
                     </td>
                     <td>
                         <div class="tumbler gender">
+                            <h4 class="tumbler__title">Пол</h4>
                             <label class="tumbler__label"><input class="tumbler__item" type="radio" name="gender" value="man" checked><span class="tumbler__text tumbler__text_left">Муж</span></label><label class="tumbler__label"><input class="tumbler__item" type="radio" name="gender" value="woman"><span class="tumbler__text tumbler__text_right">Жен</span></label>
                         </div>
                     </td>
                     <td>
-                        <div class="input-field">
+                        <div class="input-field family-status">
                             <h4 class="input-field__label">Семейное положение</h4>
                             <select class="input-field__select">
                                 <option selected>Женат / Замужем</option>
@@ -91,16 +96,16 @@
                             </select>
                         </div>
                     </td>
-                    <td>
-                        <div class="input-field">
+                    <td colspan="2">
+                        <div class="input-field birthday">
                             <h4 class="input-field__label">Дата рождения</h4>
-                            <select class="input-field__select">
+                            <select class="input-field__select input-field__select_birthday-day">
                                 <option>11</option>
                             </select>
-                            <select class="input-field__select">
+                            <select class="input-field__select input-field__select_birthday-month">
                                 <option>июня</option>
                             </select>
-                            <select class="input-field__select">
+                            <select class="input-field__select input-field__select_birthday-year">
                                 <option>1970</option>
                             </select>
                         </div>
@@ -108,17 +113,23 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <div class="input-field">
+                        <div class="input-field birth-place">
                             <h4 class="input-field__label">Место рождения</h4>
                             <input class="input-field__control" type="text">
+                            <p class="birth-place__example">Например, Россия, Комсомольск-на-Амуре</p>
                         </div>
                     </td>
                 </tr>
+                <tr class="account-footer">
+                    <td>
+                        <form class="account-footer__form account-footer__form_back"><button class="account-button account-button_back" type="submit" value="back">← Назад</button></form>
+                    </td>
+                    <td></td>
+                    <td>
+                        <form class="account-footer__form account-footer__form_forward"><button class="account-button account-button_forward" type="submit" value="forward">Далее →</button></form>
+                    </td>
+                </tr>
             </table>
-            <div class="account-footer">
-                <form><button class="account-button">Назад</button></form>
-                <form><button class="account-button">Далее</button></form>
-            </div>
         </div>
     </div>
 </body>
