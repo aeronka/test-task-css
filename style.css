@@ -4,24 +4,24 @@
 }
 
 body {
-    font-family: Helvetica,arial,sans-serif;
     font-size: 15px;
+    font-family: Helvetica,arial,sans-serif;
     line-height: 1.5;
 }
 
 /* стили, определяющие двухколонный макет */
 .personal-account {
-    width: 1024px;
-    margin: 0 auto;
     position: relative;
+    margin: 0 auto;
+    width: 1024px;
 }
 
     .common-info {
-        width: 200px;
         position: absolute;
-        padding-right: 40px;
-        font-size: 13px;
         top: 160px;
+        padding-right: 40px;
+        width: 200px;
+        font-size: 13px;
     }
 
         .common-info__about {
@@ -34,27 +34,27 @@ body {
 
     .account-content {
         position: absolute;
-        width: 784px;
-        left: 240px;
         top: 40px;
+        left: 240px;
+        width: 784px;
     }
 
 /* стили блока верхнего меню */
 .account-header {
-    list-style: none;
-    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
-    border-radius: 15px;
-    height: 67px;
-    width: 675px;
-    text-align: center;
     margin: 0 auto;
+    width: 675px;
+    height: 67px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    list-style: none;
+    text-align: center;
 }
 
     .account-header__item {
         display: inline-block;
         padding: 0 10px;
-        line-height: 67px;
         font-weight: lighter;
+        line-height: 67px;
     }
 
         .account-header__link{
@@ -62,67 +62,67 @@ body {
         }
 
         .account-header__link_color-violet {
-            color: rgb(107, 0, 180);
             border-bottom: 1px solid rgb(107, 0, 180);
+            color: rgb(107, 0, 180);
         }
 
         .account-header__link_color-green {
-            color: rgb(20, 115, 27);
             border-bottom: 1px solid rgb(20, 115, 27);
+            color: rgb(20, 115, 27);
         }
 
         .account-header__link_color-blue {
-            color: rgb(14, 115, 217);
             border-bottom: 1px solid rgb(14, 115, 217);
+            color: rgb(14, 115, 217);
         }
 
         .account-header__link_color-orange {
-            color: rgb(227, 76, 0);
             border-bottom: 1px solid rgb(227, 76, 0);
+            color: rgb(227, 76, 0);
         }
 
         .account-header__link_color-grey {
-            color: rgb(51, 51, 51);
             border-bottom: 1px solid rgb(51, 51, 51);
+            color: rgb(51, 51, 51);
         }
 
         .account-header__link_color-red {
-            color: rgb(182, 7, 0);
             border-bottom: 1px solid rgb(182, 7, 0);
+            color: rgb(182, 7, 0);
         }
 
 /* стили таблицы с формой */
 .account-form {
-    width: 680px;
     margin: 50px auto 0;
+    width: 680px;
     border-collapse: collapse;
 }
 
 /* шкала шагов */
 
 .content-steps__name {
-    font-weight: lighter;
-    font-size: 23px;
     display: inline-block;
     white-space: nowrap;
+    font-weight: lighter;
+    font-size: 23px;
 }
 
 .scale-steps {
     display: inline-block;
-    list-style: none;
-    font-size: 10px;
-    font-style: italic;
-    font-weight: lighter;
-    vertical-align: text-top;
     margin-left: 25px;
+    list-style: none;
+    vertical-align: text-top;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 10px;
 }
 
     .scale-steps__item {
         display: inline-block;
+        margin-right: 1px;
         width: 90px;
         height: 14px;
         text-align: center;
-        margin-right: 1px;
     }
 
     .scale-steps__item:first-child {
@@ -131,27 +131,27 @@ body {
     }
 
     .scale-steps__item:last-child {
+        margin-right: 0;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
-        margin-right: 0;
     }
 
     .scale-steps__item_dark-green {
-        color: rgb(255, 255, 255);
         background: rgb(59, 173, 25);
         box-shadow: inset 0px 3px 4px -2px rgba(33, 96, 14, 1);
+        color: rgb(255, 255, 255);
     }
 
     .scale-steps__item_light-green {
-        color: rgb(255, 255, 255);
         background: rgb(159, 210, 6);
         box-shadow: inset 0px 3px 4px -2px rgba(89, 118, 2, 1);
+        color: rgb(255, 255, 255);
     }
 
     .scale-steps__item_light-grey {
-        color: rgb(123, 123, 123);
         background: rgb(246, 246, 246);
         box-shadow: inset 0px 3px 4px -2px rgba(145, 145, 145, 1);
+        color: rgb(123, 123, 123);
     }
 
 /* разделитель */
@@ -161,18 +161,18 @@ body {
     }
 
         .form-separator__label {
-            font-style: italic;
             color: rgb(102, 102, 102);
             font-weight: lighter;
+            font-style: italic;
             font-size: 13px;
         }
 
         .form-separator__separator {
             display: inline-block;
-            width: 540px;
-            background: rgb(202, 202, 202);
-            height: 1px;
             margin-left: 7px;
+            width: 540px;
+            height: 1px;
+            background: rgb(202, 202, 202);
             vertical-align: middle;
         }
 
@@ -194,12 +194,13 @@ body {
 
     /* тумблер */
     .tumbler__title{
-        font-size: 12px;
         margin-bottom: 6px;
+        font-size: 12px;
     }
 
     .tumbler__label {
         cursor: pointer;
+
         -ms-user-select: none; 
         -moz-user-select: none; 
         -webkit-user-select: none; 
@@ -207,23 +208,23 @@ body {
     }
 
         .tumbler__item {
-            opacity: 0;
             position: absolute;
+            opacity: 0;
         }
 
         .tumbler__text {
-            border-bottom: 1px dotted black;
-            font-size: 13px;
-            font-weight: lighter;
             margin: 0 4px;
+            border-bottom: 1px dotted black;
+            font-weight: lighter;
+            font-size: 13px;
         }
 
         .tumbler__item:checked + .tumbler__text {
-            background: rgb(140, 185, 3);
-            border-radius: 5px;
-            border-bottom: 0;
-            color: rgb(255, 255, 255);
             padding: 2px 6px;
+            border-bottom: 0;
+            border-radius: 5px;
+            background: rgb(140, 185, 3);
+            color: rgb(255, 255, 255);
             font-weight: lighter;
         }
 
@@ -234,13 +235,14 @@ body {
     /* select */
 
     .input-field__select {
+        width: 190px;
+        border: 1px solid rgb(223, 223, 223);
+        background: rgb(255, 255, 255);
+
         -ms-user-select: none; 
         -moz-user-select: none; 
         -webkit-user-select: none; 
         user-select: none;
-        border: 1px solid rgb(223, 223, 223);
-        width: 190px;
-        background: rgb(255, 255, 255);
     }
 
     /* select дата рождения */
@@ -266,18 +268,18 @@ body {
         }
 
         .birth-place__example {
-            font-size: 11px;
-            color: rgb(102, 102, 102);
             margin: 0;
             padding: 5px 0 0;
+            color: rgb(102, 102, 102);
             font-weight: lighter;
+            font-size: 11px;
         }
 
     /* footer кнопки */
     .account-footer {
         background: rgb(242, 242, 242);
-        line-height: 65px;
         vertical-align: middle;
+        line-height: 65px;
     }
 
         .account-footer__form_back {
@@ -289,29 +291,29 @@ body {
         }
 
             .account-button {
-                line-height: 20px;
                 padding: 7px 25px;
+                border: 0px;
+                border-radius: 17px;
                 color: rgb(255, 255, 255);
                 text-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
-                border-radius: 17px;
-                border: 0px;
-                font-size: 14px;
-                font-weight: lighter;
                 letter-spacing: .1em;
+                font-weight: lighter;
+                font-size: 14px;
+                line-height: 20px;
             }
 
             .account-button_back {
+                margin-left: 15px;
                 background: rgb(180, 180, 180);
                 background: linear-gradient(to bottom, rgb(192, 192, 192), rgb(126, 126, 126));
                 box-shadow: inset 0 1px 1px rgba(255, 255, 255, .5), inset 0 -1px 1px rgba(0, 0, 0, .2);
-                margin-left: 15px;
             }
 
             .account-button_forward {
+                margin-right: 15px;
                 background: rgb(160, 211, 6);
                 background: linear-gradient(to bottom, rgb(166, 219, 8), rgb(134, 179, 3));
                 box-shadow: inset 0 1px 1px rgba(255, 255, 255, .5), inset 0 -1px 1px rgba(90, 140, 3, .5);
-                margin-right: 15px;
             }
 
             .account-button:focus {
