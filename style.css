@@ -54,7 +54,7 @@ body {
         display: inline-block;
         padding: 0 10px;
         line-height: 67px;
-        font-weight: 300;
+        font-weight: lighter;
     }
 
         .account-header__link{
@@ -99,62 +99,60 @@ body {
 }
 
 /* шкала шагов */
-    .content-steps {
+
+.content-steps__name {
+    font-weight: lighter;
+    font-size: 23px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.scale-steps {
+    display: inline-block;
+    list-style: none;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    vertical-align: text-top;
+    margin-left: 25px;
+}
+
+    .scale-steps__item {
         display: inline-block;
+        width: 90px;
+        height: 14px;
+        text-align: center;
+        margin-right: 1px;
     }
 
-        .content-steps__name {
-            font-weight: lighter;
-            font-size: 24px;
-            display: inline-block;
-        }
+    .scale-steps__item:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
 
-        .scale-steps {
-            display: inline-block;
-            list-style: none;
-            font-size: 10px;
-            font-style: italic;
-            font-weight: lighter;
-            vertical-align: text-top;
-            margin-left: 25px;
-        }
+    .scale-steps__item:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        margin-right: 0;
+    }
 
-            .scale-steps__item {
-                display: inline-block;
-                width: 90px;
-                height: 14px;
-                text-align: center;
-                margin-right: 1px;
-            }
+    .scale-steps__item_dark-green {
+        color: rgb(255, 255, 255);
+        background: rgb(59, 173, 25);
+        box-shadow: inset 0px 3px 4px -2px rgba(33, 96, 14, 1);
+    }
 
-            .scale-steps__item:first-child {
-                border-top-left-radius: 3px;
-                border-bottom-left-radius: 3px;
-            }
+    .scale-steps__item_light-green {
+        color: rgb(255, 255, 255);
+        background: rgb(159, 210, 6);
+        box-shadow: inset 0px 3px 4px -2px rgba(89, 118, 2, 1);
+    }
 
-            .scale-steps__item:last-child {
-                border-top-right-radius: 3px;
-                border-bottom-right-radius: 3px;
-                margin-right: 0;
-            }
-
-            .scale-steps__item_dark-green {
-                color: rgb(255, 255, 255);
-                background: rgb(59, 173, 25);
-                box-shadow: inset 0px 3px 4px -2px rgba(33, 96, 14, 1);
-            }
-
-            .scale-steps__item_light-green {
-                color: rgb(255, 255, 255);
-                background: rgb(159, 210, 6);
-                box-shadow: inset 0px 3px 4px -2px rgba(89, 118, 2, 1);
-            }
-
-            .scale-steps__item_light-grey {
-                color: rgb(123, 123, 123);
-                background: rgb(246, 246, 246);
-                box-shadow: inset 0px 3px 4px -2px rgba(145, 145, 145, 1);
-            }
+    .scale-steps__item_light-grey {
+        color: rgb(123, 123, 123);
+        background: rgb(246, 246, 246);
+        box-shadow: inset 0px 3px 4px -2px rgba(145, 145, 145, 1);
+    }
 
 /* разделитель */
     .form-separator {
@@ -185,7 +183,7 @@ body {
     }
 
         .input-field__label {
-            font-size: 13px;
+            font-size: 12px;
         }
 
         .input-field__control {
@@ -196,7 +194,7 @@ body {
 
     /* тумблер */
     .tumbler__title{
-        font-size: 13px;
+        font-size: 12px;
         margin-bottom: 6px;
     }
 
@@ -209,7 +207,8 @@ body {
     }
 
         .tumbler__item {
-            display: none;
+            opacity: 0;
+            position: absolute;
         }
 
         .tumbler__text {
@@ -228,6 +227,10 @@ body {
             font-weight: lighter;
         }
 
+        .tumbler__item:focus + .tumbler__text {
+            box-shadow: 0 0px 0px 2px rgba(131, 191, 252, 1);
+        }
+
     /* select */
 
     .input-field__select {
@@ -235,7 +238,7 @@ body {
         -moz-user-select: none; 
         -webkit-user-select: none; 
         user-select: none;
-
+        border: 1px solid rgb(223, 223, 223);
         width: 190px;
         background: rgb(255, 255, 255);
     }
@@ -286,6 +289,7 @@ body {
         }
 
             .account-button {
+                line-height: 20px;
                 padding: 7px 25px;
                 color: rgb(255, 255, 255);
                 text-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
@@ -312,4 +316,14 @@ body {
 
             .account-button:focus {
                 outline: none;
+            }
+
+            .account-button_back:active {
+                background: rgb(126, 126, 126);
+                background: linear-gradient(to top, rgb(192, 192, 192), rgb(126, 126, 126));
+            }
+
+            .account-button_forward:active{
+                background: rgb(134, 179, 3);
+                background: linear-gradient(to top, rgb(166, 219, 8), rgb(134, 179, 3));
             }
